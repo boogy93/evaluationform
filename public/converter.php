@@ -30,30 +30,7 @@ if (isset($_GET['fah'])) {
     $cel = fahToCel($fah);
     $celMsg = "$fah &deg;F = $cel &deg;C";
 }
- 
+ Header("Location: resultat.php");
 ?>
  
  
-<form>
-    Celsius: <input type="number" name="cel">
-    <input type="submit" value="Convert Celsius to Fahrenheit">
-    <?php
-    if (isset($fahMsg)) {
-        echo $fahMsg;
-    }
-    ?>
-</form>
-<br>
-<form>
-
-    Fahrenheit: <input type="number" name="fah">
-    <input type="submit" value="Convert Fahrenheit to Celsius">
-    <?php
-    if (isset($celMsg)) {
-        echo $celMsg;
-    }
-    ?>
-</form>
- 
-</body>
-</html>

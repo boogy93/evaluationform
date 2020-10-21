@@ -9,7 +9,6 @@
     
 </head>
 <body>
-
 	
 	<div class="w3-row">
 		<div class="w3-quarter w3-container">
@@ -20,7 +19,7 @@
 				<h2>Authentification </h2>
 			</div>
 			<br><br>
-			<form action="login" method="POST">
+			<form action="loginAccept.php" method="POST">
                 <h1>Connexion</h1>
                 
                 <label><b>Nom d'utilisateur</b></label>

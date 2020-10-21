@@ -1,18 +1,14 @@
 <?php
 
-session_start();
-if ( $_POST['password']!= 'admin' )
-{
-header('Location: login.php');
-echo'ok';
-exit();
-}else {
-    echo "Mauvais mot de passe";
-} 
 
-echo 'Veuillez resaisir vos identifiant <br>'; 
-if ( $_POST['username']!= 'admin@admin.fr' )
+
+if ( $_POST['password'] == "admin" && $_POST['username'] == "admin@admin.fr")
 {
-header('Location: login.php');
-echo'ok';
+header('Location: converter.php');
+exit();
+} else {
+
+       echo"Mauvais mot de passe";
+    }
+    header('Location: login.php');
 ?>
